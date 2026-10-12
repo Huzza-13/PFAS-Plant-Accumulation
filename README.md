@@ -1,51 +1,90 @@
-# Global Patterns and Predictors of PFAS Accumulation in Terrestrial Plants
+# PFAS accumulation in terrestrial plants
 
-This repository contains the Python scripts used for model development, validation, interpretation, and visualization in the study, *Global Patterns and Predictors of PFAS Accumulation in Terrestrial Plants and Implications for Dietary Exposure*.
+Supporting code and research snapshots for **Patterns and Predictors of Global PFAS Accumulation in Terrestrial Plants and Implications for Dietary Exposure**.
 
-## Repository contents
+Target repository: [Huzza-13/PFAS-Plant-Accumulation](https://github.com/Huzza-13/PFAS-Plant-Accumulation).
 
-- `scripts/`: analysis and figure-generation scripts.
-- `data/`: location for an authorized literature-derived input workbook; the workbook is not distributed here.
-- `results/`: destination for locally generated model outputs, tables, and figures.
+**Status: organized research-support draft, not a fully validated publication release.** The author requested 18 machine-learning scripts numbered 01-18, excluding the rice/vegetable, wheat and world-map scripts. No complete model retraining was performed. Original source files and prior packages remain unchanged. The former 16-script directory was removed before uploading the new workflow; previous versions remain in Git history.
 
-## Final prediction model
+See [Chinese upload list](GITHUB_UPLOAD_LIST_CN.md), [old/new filename mapping](docs/script_numbering.csv), and [release checklist](docs/RELEASE_CHECKLIST_CN.md).
 
-The final XGBoost model predicts log10 PFAS concentration from 13 original predictors: plant tissue group and morphotype; soil pH, soil organic matter, exposure concentration, growth duration, and growth temperature; and six molecular descriptors (ALogP, Chi3v, GATS3c, MinPartialCharge, SpMin8_Bhi, and TPSA).
+## Contents
 
-Carbon-chain length and PFAS class are not model inputs. They are retained only for post hoc chemical interpretation in `03_Molecular_correlation.py` and `17_Molecular_SHAP_vs_chain_and_class.py`.
+| Location | Contents |
+|---|---|
+| `scripts/` | 18 research scripts plus two path/chain helpers |
+| `data/` | Three unchanged workbooks and existing map resources |
+| `reference_results/` | Existing model, SHAP arrays, parameters and result tables; not freshly regenerated |
+| `docs/` | Source hashes, numbering map, environment, changes and test records |
+| `results/` | New/replayed outputs; excluded from Git and ZIP |
 
-## Reproduction workflow
+Other supporting files were retained as requested. Historical dietary/map snapshots have unresolved assumptions and are not reproduced by this candidate, which excludes their scripts.
 
-Install the required packages in a Python environment:
+## Setup
 
-```bash
-pip install -r requirements.txt
+Use Python 3.12.3. From the repository root:
+
+```sh
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+python -m pip install -r requirements.txt
+python check_package.py
+python run.py --list
 ```
 
-The principal analysis workflow is as follows:
+Requirements describe the inspected environment, not every historical training run. The saved laboratory joblib reports scikit-learn 1.9.0, while the inspected environment has 1.5.1; loading also produced an XGBoost serialization warning. A prior tissue-SHAP numerical check passed, but the original supported environment remains unconfirmed. See [model-persistence guidance](https://scikit-learn.org/stable/model_persistence.html). Load only trusted joblib files.
 
-1. `05_XGBoost_nested_optimization.py`: primary nested Study-PFAS-grouped cross-validation and hyperparameter optimization.
-2. `06_Fig3a_OOF_performance.py`: out-of-fold performance plot based on the primary validation output.
-3. `07_Final_XGBoost_for_SHAP.py`: refits the final XGBoost model and exports the transformed data, fitted pipeline, SHAP metadata, and tuning results required for interpretation.
-4. `08_Fig3b_Overall_SHAP.py`, `09_Fig3d_Molecular_SHAP.py`, and `10_Fig3c_Env_Plant_Exposure_SHAP.py`: global, molecular, and plant/environment/exposure SHAP visualizations.
-5. `17_Molecular_SHAP_vs_chain_and_class.py`: compound-level molecular-SHAP visualization by carbon-chain length and PFAS class.
+## Numbered workflow
 
-Supporting analyses are provided in `11_FigS_Model_screening.py`, `13_SI_Predictor-domain sensitivity analysis.py`, and `14_SI_Nested_CV_fold_diagnostics.py`. `15_Study_grouped_nested_CV_sensitivity.py` and `16_LOSO_nested_CV.py` provide stricter study-level validation analyses. Scripts `01_model_screening.py`, `02_Feature_block_models.py`, `03_Molecular_correlation.py`, and `04_Reduced_model_comparison.py` document exploratory model-screening, predictor-block, descriptor-screening, and reduced-model comparisons; they are retained for analytical transparency and are not the final prediction workflow.
+Each command runs one analysis, not the entire pipeline. Numbering groups related tasks; independent steps do not require every lower-numbered script.
 
-## Input data and local paths
+| New ID | Original ID | Purpose / current manuscript location |
+|---|---|---|
+| 01 | 03 | Molecular correlations/classes; Fig. S4 |
+| 02 | 11 | Laboratory algorithm screening; Fig. S5 / Table S3 |
+| 03 | 02 | Predictor-block models |
+| 04 | 13 | Predictor-block display; Fig. S7 |
+| 05 | 05 | Laboratory nested grouped CV |
+| 06 | 06 | Laboratory OOF display; Fig. 3a |
+| 07 | 14 | Laboratory fold diagnostics; Fig. S6 |
+| 08 | 07 | Final full-data laboratory model for interpretation |
+| 09 | 08 | Laboratory overall SHAP and importance |
+| 10 | 008 | Laboratory combined SHAP; Fig. 3e |
+| 11 | 17 | Chain/class molecular SHAP; Fig. S10 |
+| 12 | 19 | One global model, tissue-stratified SHAP; Fig. S8/S9 |
+| 13 | 001 | Field four-algorithm nested development |
+| 14 | 002 | Field OOF display; Fig. 3b |
+| 15 | 003 | Field SHAP/importance; pending parameter review |
+| 16 | 005 | Field SHAP beeswarm; Fig. 3f; pending parameter review |
+| 17 | 004 | Laboratory/field importance comparison; needs exact field table |
+| 18 | 006 | Field validation displays; Fig. S11 |
 
-The scripts expect an Excel workbook containing the columns specified within each script, including `Log PFASs concentration`, `Reference`, and `PFASs Name`. Before use, place an authorized copy of the workbook in `data/` and update the input and output path declarations at the beginning of each relevant script. The current scripts preserve the Windows paths used for the original analysis, rather than assuming a repository-relative location.
+Examples:
 
-The literature-derived workbook is not included because it contains records compiled from published sources. Any public redistribution should be checked against the permissions and terms of the underlying sources.
+```sh
+python run.py 01
+python run.py 06 --snapshot
+python run.py 07 --snapshot
+python run.py 10 --snapshot
+python run.py 11 --snapshot
+python run.py 12 --snapshot
+python run.py 14 --snapshot
+python run.py 18 --snapshot
+```
 
-## Outputs
+Snapshot mode seeds saved inputs in a separate replay directory and refuses training/refitting scripts (02, 03, 05, 08, 13, 15, 16). Replay does not validate historical training. Direct execution is also supported, e.g. `python scripts/06_Laboratory_OOF_performance.py`. Repository-local paths do not depend on the current working directory; `PFAS_RESULTS_DIR` may select another output location. Figure output basenames are preserved, but their parent directories are relocated to avoid writing into the original project.
 
-Generated model objects, cross-validation predictions, tables, and figure files are written to the local output directory configured in each script. These outputs are intentionally not tracked in the repository.
+## Decisions and limits
 
-## Citation
+- Laboratory: 825 observations, 13 raw predictors. Field: 862 strict-matched observations, 11 raw predictors, 35 Study-PFAS combinations from three studies.
+- Study-PFAS grouping holds each study-compound combination within one fold; it is not whole-study holdout.
+- Script 13 uses ordinary `GradientBoostingRegressor` in the GB comparison branch, as confirmed by the author. Unsupported `max_iter` was repaired to `n_estimators=[200,300]`. Other candidates, seeds, R2 scoring and GridSearchCV are retained. Parameter checks did not fit models; historical GB metrics were not regenerated. The existing best field model remains XGBoost, not GB.
+- Scripts 15/16 remain gated until fixed XGBoost parameters are reconciled with the final field model. Script 17 needs exact laboratory importance from 09 and exact field importance from reviewed 15. The latter table is absent from saved snapshots; no rounded-constant fallback is supplied.
+- Chain length is an interpretation variable, not a final-model predictor. Scripts 01/11 use conventional Cn for PFCA/PFSA (PFOA=8, PFOS=8), and total molecular carbon number for other listed PFAS (8:2 diPAP=20), not perfluorinated-carbon count. Unknown compounds fail. Original Excel values remain unchanged; Fig. S4 needs review after correction.
+- SHAP is descriptive attribution, not causal evidence or OOF validation.
+- OriginPro analyses, external ChemDes generation and the excluded dietary/map analyses are not reproduced. No full-paper reproduction claim is made.
 
-Please cite the associated manuscript when using this code. The DOI will be added after publication.
+## Sharing
 
-## Licence
-
-No licence has yet been selected. Reuse of this repository requires permission from the authors until a licence is added.
+No code/data licence was invented. Confirm ownership, redistribution rights, source attribution and the training environment before a final publication release; see `RIGHTS.md`. After validation, use a fixed release and actual accessible identifier. A request to upload is not proof of successful upload.
