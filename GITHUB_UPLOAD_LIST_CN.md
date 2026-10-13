@@ -44,12 +44,14 @@ check_package.py
 .gitignore
 RIGHTS.md
 scripts/              18 个研究脚本 + 2 个必需辅助文件
-data/                 三份未修改工作簿、原地图组件与说明
+data/                 作者指定的新数据库、三份历史/支持工作簿、原地图组件与说明
 reference_results/    已有保存结果及快照说明
 docs/                 来源、编号、环境与检查记录
 ```
 
 两个辅助文件 `project_paths.py`、`pfas_chain_lengths.py` 不能遗漏。膳食/地图数据及旧表格保留，但没有对应三个分析脚本，不能标为本包已复现结果。
+
+2026-10-13 作者指定的正式模型输入是 `Machine-learning dataset.xlsx`，含 Lab model（825 条）和 Field model（862 条）。训练数值与前版一致，田间文献标签更新，读取辅助函数恢复原分组编号；原工作簿没有编辑，模型没有重训。代码中的输入路径同步改为该文件。
 
 不上传 `results/`、虚拟环境、缓存、第三方全文论文、历史/探索性代码或外部整理工具。
 

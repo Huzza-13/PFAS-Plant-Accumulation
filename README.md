@@ -13,7 +13,7 @@ See [Chinese upload list](GITHUB_UPLOAD_LIST_CN.md), [old/new filename mapping](
 | Location | Contents |
 |---|---|
 | `scripts/` | 18 research scripts plus two path/chain helpers |
-| `data/` | Three unchanged workbooks and existing map resources |
+| `data/` | Author-designated `Machine-learning dataset.xlsx`, three unchanged historical/supporting workbooks, and existing map resources |
 | `reference_results/` | Existing model, SHAP arrays, parameters and result tables; not freshly regenerated |
 | `docs/` | Source hashes, numbering map, environment, changes and test records |
 | `results/` | New/replayed outputs; excluded from Git and ZIP |
@@ -76,6 +76,8 @@ python run.py 18 --snapshot
 Snapshot mode seeds saved inputs in a separate replay directory and refuses training/refitting scripts (02, 03, 05, 08, 13, 15, 16). Replay does not validate historical training. Direct execution is also supported, e.g. `python scripts/06_Laboratory_OOF_performance.py`. Repository-local paths do not depend on the current working directory; `PFAS_RESULTS_DIR` may select another output location. Figure output basenames are preserved, but their parent directories are relocated to avoid writing into the original project.
 
 ## Decisions and limits
+
+- The canonical model input is `data/Machine-learning dataset.xlsx`, supplied by the author on 2026-10-13 and copied without modification. Its `Lab model` sheet is identical to the prior laboratory input; its `Field model` sheet is identical to the previous 862-row strict subset except for cleaned reference labels. `read_field_dataset` restores the original stable study IDs from those references, preserving row order and validation groups. See `docs/author_workbook_validation.json`. Historical workbooks are retained for provenance, not used as alternative canonical inputs.
 
 - Laboratory: 825 observations, 13 raw predictors. Field: 862 strict-matched observations, 11 raw predictors, 35 Study-PFAS combinations from three studies.
 - Study-PFAS grouping holds each study-compound combination within one fold; it is not whole-study holdout.

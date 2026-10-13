@@ -5,6 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 import sys
+from unittest.mock import patch
 
 import numpy as np
 import pandas as pd
@@ -12,6 +13,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "scripts"))
 from pfas_chain_lengths import carbon_chain_lengths
+from project_paths import read_field_dataset
 
 
 def main():
@@ -50,7 +52,7 @@ def main():
     searches = [n for n in ast.walk(field_tree) if isinstance(n, ast.Call) and isinstance(n.func, ast.Name) and n.func.id == "GridSearchCV"]
     assert any(any(k.arg == "scoring" and isinstance(k.value, ast.Constant) and k.value.value == "r2" for k in n.keywords) for n in searches)
     checks.append("Field four-model parameter names valid; ordinary GB n_estimators grid and R2/GridSearchCV retained; no fitting")
-    lab = pd.read_excel(ROOT / "data/Machine-learning original dataset.xlsx")
+    lab = pd.read_excel(ROOT / "data/Machine-learning dataset.xlsx")
     assert len(lab) == 825
     chains = carbon_chain_lengths(lab["PFASs Name"])
     assert chains[lab["PFASs Name"].str.strip() == "8:2 diPAP"].eq(20).all()
@@ -62,12 +64,20 @@ def main():
     else:
         raise AssertionError("Unmapped PFAS must fail")
     checks.append("Laboratory rows and explicit chain mapping, including unmapped failure")
-    field = pd.read_excel(ROOT / "data/Machine-learning original dataset_with_field_dataset.xlsx", sheet_name="Field dataset")
+    field = read_field_dataset(ROOT / "data/Machine-learning dataset.xlsx")
+    with patch("pandas.read_excel", return_value=pd.DataFrame({"Reference": ["Unknown study"]})):
+        try:
+            read_field_dataset(ROOT / "data/Machine-learning dataset.xlsx")
+        except ValueError:
+            pass
+        else:
+            raise AssertionError("Unmapped study references must fail")
     strict = field[field["Data quality tier"] == "A_strict_matched"]
     assert len(strict) == 862
     assert (strict["Study_ID"].astype(str) + "_" + strict["PFASs Name"].astype(str)).nunique() == 35
     assert strict["Study_ID"].nunique() == 3
     checks.append("Field strict-matched rows, studies, Study-PFAS group count")
+    checks.append("Author-designated public workbook loads; unknown study references fail")
     reference = ROOT / "reference_results"
     shap = pd.read_csv(reference / "Final_XGBoost_raw_SHAP_values.csv")
     x = pd.read_csv(reference / "Final_XGBoost_transformed_X.csv")
