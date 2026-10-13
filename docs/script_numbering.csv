@@ -1,0 +1,19 @@
+﻿new_id,new_filename,original_filename,purpose,status
+01,01_Molecular_correlation.py,03_Molecular_correlation.py,分子描述符相关性,included
+02,02_Laboratory_model_screening.py,11_FigS_Model_screening.py,实验室算法筛选,included
+03,03_Feature_block_models.py,02_Feature_block_models.py,预测变量分组模型比较,included
+04,04_Predictor_domain_sensitivity.py,13_SI_Predictor-domain sensitivity analysis.py,分组比较展示,included
+05,05_Laboratory_nested_XGBoost.py,05_XGBoost_nested_optimization.py,实验室嵌套验证与调参,included
+06,06_Laboratory_OOF_performance.py,06_Fig3a_OOF_performance.py,实验室折外预测图,included
+07,07_Laboratory_fold_diagnostics.py,14_SI_Nested_CV_fold_diagnostics.py,实验室验证折诊断,included
+08,08_Laboratory_final_XGBoost.py,07_Final_XGBoost_for_SHAP.py,实验室最终解释模型,included
+09,09_Laboratory_overall_SHAP.py,08_Fig3b_Overall_SHAP.py,实验室整体 SHAP,included
+10,10_Laboratory_combined_SHAP.py,008_Fig3e.py,实验室组合 SHAP 图,included
+11,11_Molecular_SHAP_chain_class.py,17_Molecular_SHAP_vs_chain_and_class.py,碳链与类别分子 SHAP,included
+12,12_Global_model_tissue_SHAP.py,19_Global_model_tissue_SHAP_display.py,全局模型组织分层 SHAP,included
+13,13_Field_nested_modeling.py,001_Field_Nested_modeling.py,田间四算法比较与嵌套验证,included; GB repair not refitted
+14,14_Field_OOF_predictions.py,002_Field_Nested_OOF_predictions.py,田间折外预测,included
+15,15_Field_SHAP.py,003_Field_Nested_SHAP.py,田间 SHAP,pending parameter provenance
+16,16_Field_SHAP_beeswarm.py,005_Field SHAP beeswarm summary plot.py,田间 SHAP 蜂群图,pending parameter provenance
+17,17_Laboratory_field_comparison.py,004_Field vs lab.py,实验室/田间重要性比较,pending exact field importance table
+18,18_Field_validation_SI.py,006_Field_SI.py,田间补充验证图,included
