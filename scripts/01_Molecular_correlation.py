@@ -18,7 +18,7 @@ import seaborn as sns
 # ============================================================
 
 INPUT_FILE = Path(
-    str(DATA_DIR / 'Machine-learning original dataset.xlsx')
+    str(DATA_DIR / 'Machine-learning dataset.xlsx')
 )
 
 OUTPUT_DIR = Path(os.environ.get(

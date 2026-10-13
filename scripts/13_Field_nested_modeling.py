@@ -1,5 +1,5 @@
 from project_paths import DATA_DIR, RESULTS_DIR
-from project_paths import require_review
+from project_paths import require_review, read_field_dataset
 require_review("field_training_method")
 # ============================================================
 # PFAS Field ML
@@ -54,7 +54,7 @@ str(RESULTS_DIR)
 )
 
 
-INPUT_FILE = str(DATA_DIR / 'Machine-learning original dataset_with_field_dataset.xlsx')
+INPUT_FILE = str(DATA_DIR / 'Machine-learning dataset.xlsx')
 
 
 OUTPUT_DIR = os.path.join(
@@ -75,10 +75,7 @@ os.makedirs(
 # ============================================================
 
 
-df = pd.read_excel(
-    INPUT_FILE,
-    sheet_name="Field dataset"
-)
+df = read_field_dataset(INPUT_FILE)
 
 
 print(

@@ -27,7 +27,7 @@ from xgboost import XGBRegressor
 # ============================================================
 
 input_file = (
-    str(DATA_DIR / 'Machine-learning original dataset.xlsx')
+    str(DATA_DIR / 'Machine-learning dataset.xlsx')
 )
 
 output_dir = Path(

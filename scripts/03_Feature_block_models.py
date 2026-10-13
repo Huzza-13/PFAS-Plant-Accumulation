@@ -18,7 +18,7 @@ from xgboost import XGBRegressor
 
 os.chdir(str(DATA_DIR))
 
-data = pd.read_excel("Machine-learning original dataset.xlsx")
+data = pd.read_excel("Machine-learning dataset.xlsx")
 
 print("Dataset shape:", data.shape)
 print("Studies:", data["Reference"].nunique())

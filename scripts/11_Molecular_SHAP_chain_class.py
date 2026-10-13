@@ -18,7 +18,7 @@ MODEL_OUTPUT_DIR = Path(
     str(RESULTS_DIR)
 )
 ORIGINAL_FILE = Path(
-    str(DATA_DIR / 'Machine-learning original dataset.xlsx')
+    str(DATA_DIR / 'Machine-learning dataset.xlsx')
 )
 
 OUTPUT_DIR = Path(

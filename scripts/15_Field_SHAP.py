@@ -1,5 +1,5 @@
 from project_paths import DATA_DIR, RESULTS_DIR
-from project_paths import require_review
+from project_paths import require_review, read_field_dataset
 require_review("field_shap_parameters")
 import os
 import numpy as np
@@ -19,7 +19,7 @@ from xgboost import XGBRegressor
 # ============================================================
 
 root_dir = str(RESULTS_DIR)
-input_file = str(DATA_DIR / 'Machine-learning original dataset_with_field_dataset.xlsx')
+input_file = str(DATA_DIR / 'Machine-learning dataset.xlsx')
 
 output_dir = os.path.join(
     root_dir,
@@ -32,10 +32,7 @@ os.makedirs(output_dir, exist_ok=True)
 # 2. Read data
 # ============================================================
 
-df = pd.read_excel(
-    input_file,
-    sheet_name="Field dataset"
-)
+df = read_field_dataset(input_file)
 
 df = df[
     df["Data quality tier"] == "A_strict_matched"

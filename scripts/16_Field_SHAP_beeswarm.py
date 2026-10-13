@@ -1,5 +1,5 @@
 from project_paths import DATA_DIR, RESULTS_DIR
-from project_paths import require_review
+from project_paths import require_review, read_field_dataset
 require_review("field_shap_parameters")
 import os
 
@@ -33,17 +33,14 @@ output_dir = os.path.join(
 os.makedirs(output_dir, exist_ok=True)
 
 
-input_file = str(DATA_DIR / 'Machine-learning original dataset_with_field_dataset.xlsx')
+input_file = str(DATA_DIR / 'Machine-learning dataset.xlsx')
 
 
 # ============================================================
 # 2. Read field dataset
 # ============================================================
 
-df = pd.read_excel(
-    input_file,
-    sheet_name="Field dataset"
-)
+df = read_field_dataset(input_file)
 
 
 df = df[
