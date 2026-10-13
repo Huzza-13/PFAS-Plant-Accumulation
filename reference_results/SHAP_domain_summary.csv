@@ -1,0 +1,5 @@
+Domain,Mean_abs_SHAP,Relative_importance_percent
+Exposure,0.67551994,31.529146
+Environment,0.59139174,27.602558
+Molecular,0.43793595,20.440178
+Plant,0.4376776,20.428118

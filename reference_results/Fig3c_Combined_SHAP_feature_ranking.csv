@@ -1,0 +1,12 @@
+Rank,Feature,Model_feature,Mean_abs_SHAP
+1,SOM,SOM,0.34371576
+2,PFAS concentration,Exposure Concentration,0.31838915
+3,Soil pH,Soil pH,0.247676
+4,Growth temperature,Growth Temperature,0.22149068
+5,ALogP,ALogP,0.20371689
+6,Growth duration,Growth Duration,0.1356401
+7,Chi3v,Chi3v,0.10134094
+8,GATS3c,GATS3c,0.07828059
+9,Min partial charge,MinPartialCharge,0.039341617
+10,SpMin8_Bhi,SpMin8_Bhi,0.012608738
+11,TPSA,TPSA,0.0026471794

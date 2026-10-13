@@ -1,0 +1,14 @@
+Feature,Mean_abs_SHAP,Domain,Relative_importance_percent
+Tissue group,0.38009632,Plant,17.740576
+SOM,0.34371576,Environment,16.042555
+Exposure concentration,0.31838915,Exposure,14.860461
+Soil pH,0.247676,Environment,11.560004
+Growth temperature,0.22149068,Exposure,10.337833
+ALogP,0.20371689,Molecular,9.508261
+Growth duration,0.1356401,Exposure,6.330852
+Chi3v,0.10134094,Molecular,4.7299767
+GATS3c,0.07828059,Molecular,3.65366
+Morphotype,0.05758128,Plant,2.6875427
+MinPartialCharge,0.039341617,Molecular,1.8362265
+SpMin8_Bhi,0.012608738,Molecular,0.5884989
+TPSA,0.0026471794,Molecular,0.12355418

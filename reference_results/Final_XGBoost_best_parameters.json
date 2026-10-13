@@ -1,0 +1,11 @@
+{
+    "subsample": 0.6,
+    "reg_lambda": 10,
+    "reg_alpha": 1.0,
+    "n_estimators": 900,
+    "min_child_weight": 3,
+    "max_depth": 2,
+    "learning_rate": 0.05,
+    "colsample_bytree": 1.0,
+    "Best_grouped_CV_RMSE": 0.8071163910191259
+}
