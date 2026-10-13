@@ -1,0 +1,27 @@
+{
+  "wheat_raw_sigma4_from_user_data": 5.753317631783762,
+  "reported_wheat_sigma4_used_for_scenario_matching": 5.61995,
+  "sigma4_scale_factor_applied": 0.976819004212981,
+  "adjusted_wheat_sigma4_component_means": {
+    "PFOA": 1.3776760469968599,
+    "PFNA": 1.0077280251928786,
+    "PFHxS": 2.332594069325741,
+    "PFOS": 0.9019518584845209
+  },
+  "vegetable_sigma4_component_means": {
+    "PFOA": 1.162834,
+    "PFNA": 0.152479,
+    "PFHxS": 0.331305,
+    "PFOS": 1.058187
+  },
+  "expected_total_HI": {
+    "Toddlers": 49.43,
+    "Children & teenagers": 30.56,
+    "Adults": 27.11
+  },
+  "calculated_total_HI": {
+    "Toddlers": 49.42608463636363,
+    "Children & teenagers": 30.564264380271787,
+    "Adults": 27.114820246453384
+  }
+}

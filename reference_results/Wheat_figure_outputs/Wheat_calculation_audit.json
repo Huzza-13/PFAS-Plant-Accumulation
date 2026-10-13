@@ -1,0 +1,16 @@
+{
+  "reported_wheat_sigma4": 5.61995,
+  "raw_wheat_sigma4": 5.753317631783762,
+  "sigma4_scale_factor": 0.976819004212981,
+  "adjusted_sigma4_means": {
+    "PFOA": 1.3776760469968599,
+    "PFNA": 1.0077280251928786,
+    "PFHxS": 2.332594069325741,
+    "PFOS": 0.9019518584845209
+  },
+  "Wheat_only_HI": {
+    "Toddlers": 16.870068090909093,
+    "Children & teenagers": 10.046911551077788,
+    "Adults": 7.867360520411117
+  }
+}
