@@ -1,0 +1,247 @@
+﻿country,crop,compound,age,log10_screening
+USA,Leaf,PFBA,Toddlers,-1.0804952999454562
+USA,Leaf,PFBA,Children & teenagers,-0.879985366336876
+USA,Leaf,PFBA,Adults,-0.8522374589924514
+USA,Leaf,PFHxA,Toddlers,-1.0804952999454562
+USA,Leaf,PFHxA,Children & teenagers,-0.879985366336876
+USA,Leaf,PFHxA,Adults,-0.8522374589924514
+USA,Leaf,PFOA,Toddlers,-1.0804952999454562
+USA,Leaf,PFOA,Children & teenagers,-0.879985366336876
+USA,Leaf,PFOA,Adults,-0.8522374589924514
+USA,Leaf,PFBS,Toddlers,-1.0804952999454562
+USA,Leaf,PFBS,Children & teenagers,-0.879985366336876
+USA,Leaf,PFBS,Adults,-0.8522374589924514
+USA,Leaf,PFHxS,Toddlers,-1.0804952999454562
+USA,Leaf,PFHxS,Children & teenagers,-0.879985366336876
+USA,Leaf,PFHxS,Adults,-0.8522374589924514
+USA,Leaf,PFOS,Toddlers,-1.0804952999454562
+USA,Leaf,PFOS,Children & teenagers,-0.879985366336876
+USA,Leaf,PFOS,Adults,-0.8522374589924514
+USA,Fruit,PFBA,Toddlers,-1.0804952999454562
+USA,Fruit,PFBA,Children & teenagers,-0.879985366336876
+USA,Fruit,PFBA,Adults,-0.8522374589924514
+USA,Fruit,PFHxA,Toddlers,-1.0804952999454562
+USA,Fruit,PFHxA,Children & teenagers,-0.879985366336876
+USA,Fruit,PFHxA,Adults,-0.8522374589924514
+USA,Fruit,PFOA,Toddlers,-1.0804952999454562
+USA,Fruit,PFOA,Children & teenagers,-0.879985366336876
+USA,Fruit,PFOA,Adults,-0.8522374589924514
+USA,Fruit,PFBS,Toddlers,-1.0804952999454562
+USA,Fruit,PFBS,Children & teenagers,-0.879985366336876
+USA,Fruit,PFBS,Adults,-0.8522374589924514
+USA,Root/shoot,PFBA,Toddlers,-1.0804952999454562
+USA,Root/shoot,PFBA,Children & teenagers,-0.879985366336876
+USA,Root/shoot,PFBA,Adults,-0.8522374589924514
+USA,Root/shoot,PFHxA,Toddlers,-1.0804952999454562
+USA,Root/shoot,PFHxA,Children & teenagers,-0.879985366336876
+USA,Root/shoot,PFHxA,Adults,-0.8522374589924514
+USA,Root/shoot,PFOA,Toddlers,-1.0804952999454562
+USA,Root/shoot,PFOA,Children & teenagers,-0.879985366336876
+USA,Root/shoot,PFOA,Adults,-0.8522374589924514
+USA,Root/shoot,PFOS,Toddlers,-1.0804952999454562
+USA,Root/shoot,PFOS,Children & teenagers,-0.879985366336876
+USA,Root/shoot,PFOS,Adults,-0.8522374589924514
+Belgium,Leaf,PFBA,Toddlers,-1.0804952999454562
+Belgium,Leaf,PFBA,Children & teenagers,-0.879985366336876
+Belgium,Leaf,PFBA,Adults,-0.8522374589924514
+Belgium,Leaf,PFHxA,Toddlers,-1.0804952999454562
+Belgium,Leaf,PFHxA,Children & teenagers,-0.879985366336876
+Belgium,Leaf,PFHxA,Adults,-0.8522374589924514
+Belgium,Leaf,PFOA,Toddlers,-1.0804952999454562
+Belgium,Leaf,PFOA,Children & teenagers,-0.879985366336876
+Belgium,Leaf,PFOA,Adults,-0.8522374589924514
+Belgium,Leaf,PFDA,Toddlers,-1.0804952999454562
+Belgium,Leaf,PFDA,Children & teenagers,-0.879985366336876
+Belgium,Leaf,PFDA,Adults,-0.8522374589924514
+Belgium,Leaf,PFBS,Toddlers,-1.0804952999454562
+Belgium,Leaf,PFBS,Children & teenagers,-0.879985366336876
+Belgium,Leaf,PFBS,Adults,-0.8522374589924514
+Belgium,Leaf,PFOS,Toddlers,-1.0804952999454562
+Belgium,Leaf,PFOS,Children & teenagers,-0.879985366336876
+Belgium,Leaf,PFOS,Adults,-0.8522374589924514
+Belgium,Leaf,6:2FTS,Toddlers,-1.0804952999454562
+Belgium,Leaf,6:2FTS,Children & teenagers,-0.879985366336876
+Belgium,Leaf,6:2FTS,Adults,-0.8522374589924514
+Belgium,Fruit,PFBA,Toddlers,-1.0804952999454562
+Belgium,Fruit,PFBA,Children & teenagers,-0.879985366336876
+Belgium,Fruit,PFBA,Adults,-0.8522374589924514
+Belgium,Fruit,PFHxA,Toddlers,-1.0804952999454562
+Belgium,Fruit,PFHxA,Children & teenagers,-0.879985366336876
+Belgium,Fruit,PFHxA,Adults,-0.8522374589924514
+Belgium,Fruit,PFOA,Toddlers,-1.0804952999454562
+Belgium,Fruit,PFOA,Children & teenagers,-0.879985366336876
+Belgium,Fruit,PFOA,Adults,-0.8522374589924514
+Belgium,Fruit,PFDA,Toddlers,-1.0804952999454562
+Belgium,Fruit,PFDA,Children & teenagers,-0.879985366336876
+Belgium,Fruit,PFDA,Adults,-0.8522374589924514
+Belgium,Fruit,PFBS,Toddlers,-1.0804952999454562
+Belgium,Fruit,PFBS,Children & teenagers,-0.879985366336876
+Belgium,Fruit,PFBS,Adults,-0.8522374589924514
+Belgium,Fruit,PFHxS,Toddlers,-1.0804952999454562
+Belgium,Fruit,PFHxS,Children & teenagers,-0.879985366336876
+Belgium,Fruit,PFHxS,Adults,-0.8522374589924514
+Belgium,Fruit,PFOS,Toddlers,-1.0804952999454562
+Belgium,Fruit,PFOS,Children & teenagers,-0.879985366336876
+Belgium,Fruit,PFOS,Adults,-0.8522374589924514
+Belgium,Fruit,6:2FTS,Toddlers,-1.0804952999454562
+Belgium,Fruit,6:2FTS,Children & teenagers,-0.879985366336876
+Belgium,Fruit,6:2FTS,Adults,-0.8522374589924514
+Netherlands,Leaf,PFOA,Toddlers,-1.0804952999454562
+Netherlands,Leaf,PFOA,Children & teenagers,-0.879985366336876
+Netherlands,Leaf,PFOA,Adults,-0.8522374589924514
+Netherlands,Leaf,GenX,Toddlers,-1.0804952999454562
+Netherlands,Leaf,GenX,Children & teenagers,-0.879985366336876
+Netherlands,Leaf,GenX,Adults,-0.8522374589924514
+Netherlands,Fruit,PFOA,Toddlers,-1.0804952999454562
+Netherlands,Fruit,PFOA,Children & teenagers,-0.879985366336876
+Netherlands,Fruit,PFOA,Adults,-0.8522374589924514
+Netherlands,Fruit,GenX,Toddlers,-1.0804952999454562
+Netherlands,Fruit,GenX,Children & teenagers,-0.879985366336876
+Netherlands,Fruit,GenX,Adults,-0.8522374589924514
+Netherlands,Root/shoot,PFOA,Toddlers,-1.0804952999454562
+Netherlands,Root/shoot,PFOA,Children & teenagers,-0.879985366336876
+Netherlands,Root/shoot,PFOA,Adults,-0.8522374589924514
+Netherlands,Root/shoot,GenX,Toddlers,-1.0804952999454562
+Netherlands,Root/shoot,GenX,Children & teenagers,-0.879985366336876
+Netherlands,Root/shoot,GenX,Adults,-0.8522374589924514
+South Korea,Rice,PFOA,Toddlers,-1.1374404322008913
+South Korea,Rice,PFOA,Children & teenagers,-1.0984640954665297
+South Korea,Rice,PFOA,Adults,-0.7879495055136763
+South Korea,Root/shoot,PFOA,Toddlers,-1.0804952999454562
+South Korea,Root/shoot,PFOA,Children & teenagers,-0.879985366336876
+South Korea,Root/shoot,PFOA,Adults,-0.8522374589924514
+Japan,Rice,PFBA,Toddlers,-1.1374404322008913
+Japan,Rice,PFBA,Children & teenagers,-1.0984640954665297
+Japan,Rice,PFBA,Adults,-0.7879495055136763
+Japan,Rice,PFOA,Toddlers,-1.1374404322008913
+Japan,Rice,PFOA,Children & teenagers,-1.0984640954665297
+Japan,Rice,PFOA,Adults,-0.7879495055136763
+Japan,Rice,PFOS,Toddlers,-1.1374404322008913
+Japan,Rice,PFOS,Children & teenagers,-1.0984640954665297
+Japan,Rice,PFOS,Adults,-0.7879495055136763
+Japan,Rice,GenX,Toddlers,-1.1374404322008913
+Japan,Rice,GenX,Children & teenagers,-1.0984640954665297
+Japan,Rice,GenX,Adults,-0.7879495055136763
+Uganda,Root/shoot,PFOA,Toddlers,-1.0804952999454562
+Uganda,Root/shoot,PFOA,Children & teenagers,-0.879985366336876
+Uganda,Root/shoot,PFOA,Adults,-0.8522374589924514
+Uganda,Root/shoot,PFBS,Toddlers,-1.0804952999454562
+Uganda,Root/shoot,PFBS,Children & teenagers,-0.879985366336876
+Uganda,Root/shoot,PFBS,Adults,-0.8522374589924514
+Australia,Fruit,PFOA,Toddlers,-1.0804952999454562
+Australia,Fruit,PFOA,Children & teenagers,-0.879985366336876
+Australia,Fruit,PFOA,Adults,-0.8522374589924514
+Australia,Fruit,PFHxS,Toddlers,-1.0804952999454562
+Australia,Fruit,PFHxS,Children & teenagers,-0.879985366336876
+Australia,Fruit,PFHxS,Adults,-0.8522374589924514
+Australia,Fruit,PFOS,Toddlers,-1.0804952999454562
+Australia,Fruit,PFOS,Children & teenagers,-0.879985366336876
+Australia,Fruit,PFOS,Adults,-0.8522374589924514
+Australia,Fruit,6:2FTS,Toddlers,-1.0804952999454562
+Australia,Fruit,6:2FTS,Children & teenagers,-0.879985366336876
+Australia,Fruit,6:2FTS,Adults,-0.8522374589924514
+China,Rice,PFBA,Toddlers,-1.1374404322008913
+China,Rice,PFBA,Children & teenagers,-1.0984640954665297
+China,Rice,PFBA,Adults,-0.7879495055136763
+China,Rice,PFHxA,Toddlers,-1.1374404322008913
+China,Rice,PFHxA,Children & teenagers,-1.0984640954665297
+China,Rice,PFHxA,Adults,-0.7879495055136763
+China,Rice,PFOA,Toddlers,-1.1374404322008913
+China,Rice,PFOA,Children & teenagers,-1.0984640954665297
+China,Rice,PFOA,Adults,-0.7879495055136763
+China,Rice,PFDA,Toddlers,-1.1374404322008913
+China,Rice,PFDA,Children & teenagers,-1.0984640954665297
+China,Rice,PFDA,Adults,-0.7879495055136763
+China,Rice,PFBS,Toddlers,-1.1374404322008913
+China,Rice,PFBS,Children & teenagers,-1.0984640954665297
+China,Rice,PFBS,Adults,-0.7879495055136763
+China,Rice,PFHxS,Toddlers,-1.1374404322008913
+China,Rice,PFHxS,Children & teenagers,-1.0984640954665297
+China,Rice,PFHxS,Adults,-0.7879495055136763
+China,Rice,PFOS,Toddlers,-1.1374404322008913
+China,Rice,PFOS,Children & teenagers,-1.0984640954665297
+China,Rice,PFOS,Adults,-0.7879495055136763
+China,Rice,GenX,Toddlers,-1.1374404322008913
+China,Rice,GenX,Children & teenagers,-1.0984640954665297
+China,Rice,GenX,Adults,-0.7879495055136763
+China,Rice,6:2FTS,Toddlers,-1.1374404322008913
+China,Rice,6:2FTS,Children & teenagers,-1.0984640954665297
+China,Rice,6:2FTS,Adults,-0.7879495055136763
+China,Leaf,PFBA,Toddlers,-1.0804952999454562
+China,Leaf,PFBA,Children & teenagers,-0.879985366336876
+China,Leaf,PFBA,Adults,-0.8522374589924514
+China,Leaf,PFHxA,Toddlers,-1.0804952999454562
+China,Leaf,PFHxA,Children & teenagers,-0.879985366336876
+China,Leaf,PFHxA,Adults,-0.8522374589924514
+China,Leaf,PFOA,Toddlers,-1.0804952999454562
+China,Leaf,PFOA,Children & teenagers,-0.879985366336876
+China,Leaf,PFOA,Adults,-0.8522374589924514
+China,Leaf,PFDA,Toddlers,-1.0804952999454562
+China,Leaf,PFDA,Children & teenagers,-0.879985366336876
+China,Leaf,PFDA,Adults,-0.8522374589924514
+China,Leaf,PFBS,Toddlers,-1.0804952999454562
+China,Leaf,PFBS,Children & teenagers,-0.879985366336876
+China,Leaf,PFBS,Adults,-0.8522374589924514
+China,Leaf,PFHxS,Toddlers,-1.0804952999454562
+China,Leaf,PFHxS,Children & teenagers,-0.879985366336876
+China,Leaf,PFHxS,Adults,-0.8522374589924514
+China,Leaf,PFOS,Toddlers,-1.0804952999454562
+China,Leaf,PFOS,Children & teenagers,-0.879985366336876
+China,Leaf,PFOS,Adults,-0.8522374589924514
+China,Leaf,GenX,Toddlers,-1.0804952999454562
+China,Leaf,GenX,Children & teenagers,-0.879985366336876
+China,Leaf,GenX,Adults,-0.8522374589924514
+China,Leaf,6:2FTS,Toddlers,-1.0804952999454562
+China,Leaf,6:2FTS,Children & teenagers,-0.879985366336876
+China,Leaf,6:2FTS,Adults,-0.8522374589924514
+China,Fruit,PFBA,Toddlers,-1.0804952999454562
+China,Fruit,PFBA,Children & teenagers,-0.879985366336876
+China,Fruit,PFBA,Adults,-0.8522374589924514
+China,Fruit,PFHxA,Toddlers,-1.0804952999454562
+China,Fruit,PFHxA,Children & teenagers,-0.879985366336876
+China,Fruit,PFHxA,Adults,-0.8522374589924514
+China,Fruit,PFOA,Toddlers,-1.0804952999454562
+China,Fruit,PFOA,Children & teenagers,-0.879985366336876
+China,Fruit,PFOA,Adults,-0.8522374589924514
+China,Fruit,PFDA,Toddlers,-1.0804952999454562
+China,Fruit,PFDA,Children & teenagers,-0.879985366336876
+China,Fruit,PFDA,Adults,-0.8522374589924514
+China,Fruit,PFBS,Toddlers,-1.0804952999454562
+China,Fruit,PFBS,Children & teenagers,-0.879985366336876
+China,Fruit,PFBS,Adults,-0.8522374589924514
+China,Fruit,PFHxS,Toddlers,-1.0804952999454562
+China,Fruit,PFHxS,Children & teenagers,-0.879985366336876
+China,Fruit,PFHxS,Adults,-0.8522374589924514
+China,Fruit,PFOS,Toddlers,-1.0804952999454562
+China,Fruit,PFOS,Children & teenagers,-0.879985366336876
+China,Fruit,PFOS,Adults,-0.8522374589924514
+China,Fruit,GenX,Toddlers,-1.0804952999454562
+China,Fruit,GenX,Children & teenagers,-0.879985366336876
+China,Fruit,GenX,Adults,-0.8522374589924514
+China,Root/shoot,PFBA,Toddlers,-1.0804952999454562
+China,Root/shoot,PFBA,Children & teenagers,-0.879985366336876
+China,Root/shoot,PFBA,Adults,-0.8522374589924514
+China,Root/shoot,PFHxA,Toddlers,-1.0804952999454562
+China,Root/shoot,PFHxA,Children & teenagers,-0.879985366336876
+China,Root/shoot,PFHxA,Adults,-0.8522374589924514
+China,Root/shoot,PFOA,Toddlers,-1.0804952999454562
+China,Root/shoot,PFOA,Children & teenagers,-0.879985366336876
+China,Root/shoot,PFOA,Adults,-0.8522374589924514
+China,Root/shoot,PFDA,Toddlers,-1.0804952999454562
+China,Root/shoot,PFDA,Children & teenagers,-0.879985366336876
+China,Root/shoot,PFDA,Adults,-0.8522374589924514
+China,Root/shoot,PFBS,Toddlers,-1.0804952999454562
+China,Root/shoot,PFBS,Children & teenagers,-0.879985366336876
+China,Root/shoot,PFBS,Adults,-0.8522374589924514
+China,Root/shoot,PFHxS,Toddlers,-1.0804952999454562
+China,Root/shoot,PFHxS,Children & teenagers,-0.879985366336876
+China,Root/shoot,PFHxS,Adults,-0.8522374589924514
+China,Root/shoot,PFOS,Toddlers,-1.0804952999454562
+China,Root/shoot,PFOS,Children & teenagers,-0.879985366336876
+China,Root/shoot,PFOS,Adults,-0.8522374589924514
+China,Root/shoot,GenX,Toddlers,-1.0804952999454562
+China,Root/shoot,GenX,Children & teenagers,-0.879985366336876
+China,Root/shoot,GenX,Adults,-0.8522374589924514
+China,Root/shoot,6:2FTS,Toddlers,-1.0804952999454562
+China,Root/shoot,6:2FTS,Children & teenagers,-0.879985366336876
+China,Root/shoot,6:2FTS,Adults,-0.8522374589924514
